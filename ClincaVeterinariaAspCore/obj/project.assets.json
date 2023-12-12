@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj",
+      "projectUniqueName": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj",
       "projectName": "ClincaVeterinariaAspCore",
-      "projectPath": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj",
+      "projectPath": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj",
       "packagesPath": "C:\\Users\\Nilson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore\\obj\\",
+      "outputPath": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -58,20 +58,11 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }
