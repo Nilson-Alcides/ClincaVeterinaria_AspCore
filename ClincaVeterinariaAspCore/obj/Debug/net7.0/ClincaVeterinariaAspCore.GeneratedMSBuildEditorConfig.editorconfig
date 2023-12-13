@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Animal/CadAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXENhZEFuaW1hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Animal/editarAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXGVkaXRhckFuaW1hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Animal/ListaAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXExpc3RhQW5pbWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Cliente/CadCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

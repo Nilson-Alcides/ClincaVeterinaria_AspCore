@@ -1,0 +1,55 @@
+﻿@model ClincaVeterinariaAspCore.Models.Animal
+
+@{
+    ViewData["Title"] = "editarAnimal";
+}
+
+<h1>editarAnimal</h1>
+
+<h4>Animal</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="editarAnimal">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                
+                <input asp-for="Id" type="hidden" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.RefCliente.id, ViewBag.ListaClientes as SelectList, "Selecione o Cliente",
+                    htmlAttributes: new { @class = "form-control" })
+
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.RefRaca.Id, ViewBag.ListaRacas as SelectList, "Selecione a raça",
+                    htmlAttributes: new { @class = "form-control" })
+
+                </div>
+
+            <div class="form-group">
+                <label asp-for="nomeAni" class="control-label"></label>
+                <input asp-for="nomeAni" class="form-control" />
+                <span asp-validation-for="nomeAni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
