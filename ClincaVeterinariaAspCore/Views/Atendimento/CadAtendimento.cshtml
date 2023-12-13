@@ -1,0 +1,57 @@
+﻿@model ClincaVeterinariaAspCore.Models.Atendimento
+
+@{
+    ViewData["Title"] = "CadAtendimento";
+}
+
+<h1>CadAtendimento</h1>
+
+<h4>Atendimento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CadAtendimento">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.RefVeterinario.Id, ViewBag.ListaVeterinarios as SelectList, "Selecione o Cliente",
+                    htmlAttributes: new { @class = "form-control" })
+
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.RefAnimal.Id, ViewBag.ListaAnimais as SelectList, "Selecione a raça",
+                    htmlAttributes: new { @class = "form-control" })
+
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="dataAtend" class="control-label"></label>
+                <input asp-for="dataAtend" type="date" class="form-control" />
+                <span asp-validation-for="dataAtend" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="horaAtend" class="control-label"></label>
+                <input asp-for="horaAtend" type="time" class="form-control" />
+                <span asp-validation-for="horaAtend" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

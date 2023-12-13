@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ClincaVeterinariaAspCore.Models.Atendimento>
+
+@{
+    ViewData["Title"] = "ListaAtendimento";
+}
+
+<h1>Agendamentos</h1>
+
+<p>
+    <a asp-action="CadAtendimento">Cadastrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RefVeterinario.NomeVeter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RefAnimal.nomeAni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dataAtend)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.horaAtend)
+            </th>
+           
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                
+                @Html.DisplayFor(modelItem => item.RefVeterinario.NomeVeter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RefAnimal.nomeAni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataAtend)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horaAtend)
+            </td>
+         
+            <td>
+                    @Html.ActionLink("Cancelar", "CancelarAtendimento", new { id=item.Id}) |
+                    @Html.ActionLink("Details", "Details", new { id=item.Id}) |
+                   @*  @Html.ActionLink("Delete", "Delete", new { id=item.Id }, *@
+                new {onclick = "return confirm('Deseja realmente Excluir este item?');"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
