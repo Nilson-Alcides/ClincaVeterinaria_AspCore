@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace aspnetcoremvc_adonet.Models
+namespace ClincaVeterinariaAspCore.Models
 {
     public class TipoAnimal
     {
