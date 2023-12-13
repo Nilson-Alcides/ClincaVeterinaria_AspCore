@@ -9,7 +9,7 @@ namespace ClincaVeterinariaAspCore.Controllers
         private readonly ILogger<HomeController> _logger;
         private ITipoAnimalRepository _tipoAnimalRepository;
 
-        public c(ILogger<HomeController> logger, ITipoAnimalRepository tipoAnimalRepository)
+        public TipoController(ILogger<HomeController> logger, ITipoAnimalRepository tipoAnimalRepository)
         {
             _logger = logger;
             _tipoAnimalRepository = tipoAnimalRepository;
@@ -18,13 +18,12 @@ namespace ClincaVeterinariaAspCore.Controllers
         {
             return View();
         }
-        // Lista Tipo Animal
         public IActionResult ListaTipoAnimal()
         {
             return View(_tipoAnimalRepository.ObterTodosTipoAnimal());
 
         }
-        // cadastro 
+
         public IActionResult CadTipo()
         {
             return View();
@@ -36,7 +35,7 @@ namespace ClincaVeterinariaAspCore.Controllers
             ViewBag.Message = "Cadastro realizado com sucesso.";
             return RedirectToAction(nameof(ListaTipoAnimal));
         }
-        //edtar
+
         public IActionResult editarTipo(int id)
         {
 
@@ -48,7 +47,6 @@ namespace ClincaVeterinariaAspCore.Controllers
             _tipoAnimalRepository.Atualizar(tipoAnimal);
             return RedirectToAction(nameof(ListaTipoAnimal));
         }
-        //deletar
         public IActionResult Delete(int id)
         {
             _tipoAnimalRepository.Excluir(id);

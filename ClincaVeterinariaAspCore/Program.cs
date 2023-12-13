@@ -1,7 +1,12 @@
+using ClincaVeterinariaAspCore.Repositories.Contract;
+using ClincaVeterinariaAspCore.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ITipoAnimalRepository, TipoAnimalRepository>();
 
 var app = builder.Build();
 
