@@ -8,6 +8,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ITipoAnimalRepository, TipoAnimalRepository>();
 builder.Services.AddScoped<IRacaRepository, RacaRepository>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+
 
 var app = builder.Build();
 
