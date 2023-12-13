@@ -19,6 +19,8 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        @if (ViewBag.UserTipo != "1")
+                        {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -34,7 +36,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Veterinario" asp-action="ListaVeterinario">Veterinario</a>
                         </li>
-
+                        }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Animal" asp-action="ListaAnimal">Animal</a>
                         </li>
@@ -43,6 +45,15 @@
                         </li>
                        @*  <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li> *@
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Logout">Bem Vindo, @ViewBag.UserLogado!<span class="glyphicon glyphicon-user"></span> Sair</a></li>
+                        <br />
+                        @* <li style="color: #FFFFFF">
+                        Bem Vindo! Welcome, @ViewBag.UserLogado! <span class="glyphicon glyphicon-log-in">
+                        @Html.ActionLink("Sair", "Logout", "Home")
+                        </span>
                         </li> *@
                     </ul>
                 </div>
