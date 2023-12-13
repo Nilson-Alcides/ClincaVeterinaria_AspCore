@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ClincaVeterinariaAspCore.Models.Cliente>
+
+@{
+    ViewData["Title"] = "ListaCliente";
+}
+
+<h1>ListaCliente</h1>
+
+<p>
+    <a asp-action="CadCliente" asp-controller="Cliente">Cadastrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomeCli)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telCli)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailCli)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomeCli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telCli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailCli)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "editarCliente", new { id=item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.id}) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.id },
+                new { onclick = "return confirm('Deseja realmente Excluir este item?');" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
