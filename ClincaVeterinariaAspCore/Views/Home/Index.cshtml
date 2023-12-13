@@ -1,8 +1,64 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model ClincaVeterinariaAspCore.Models.Login
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@ViewBag.confCadastro
+@ViewBag.msgLogar
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <fieldset>
+        <br />
+        <h2>Entrar</h2>
+        <br />
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i style="font-size:20px;" class="fas fa-envelope"></i></span>
+
+                @Html.EditorFor(x => x.usuario, new
+            {
+            htmlAttributes = new { id = "txtUsuario", senha = "txtUsuario", type = "text",
+            @class = "form-control", placeholder = "Digite o usuario", required = "required", maxlength = "30" }
+            })
+
+                @Html.ValidationMessageFor(x => x.usuario, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i style="font-size:20px;" class="fas fa-lock"></i></span>
+
+                @Html.EditorFor(x => x.senha, new
+            {
+            htmlAttributes = new { id = "txtSenha", senha = "txtSenha", type = "password",
+            @class = "form-control", placeholder = "Digite sua senha", required = "required", maxlength = "10" }
+            })
+
+                @Html.ValidationMessageFor(x => x.senha, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+        <br />
+        <input type="submit" class="button button-a button-big button-rouded" value="ENTRAR">
+        <br />
+        <br />
+
+    </fieldset>
+
+    <div class="container">
+        <div class="rectangle">
+            <div class="polygon-cover">
+                <div class="polygon"></div>
+            </div>
+            <div class="hexagon-cover">
+                <div class="hexagon">
+                </div>
+            </div>
+        </div>
+    </div>
+}
