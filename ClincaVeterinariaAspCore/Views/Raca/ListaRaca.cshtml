@@ -4,10 +4,10 @@
     ViewData["Title"] = "ListaRaca";
 }
 
-<h1>ListaRaca</h1>
+<h1>Listar Raca</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="CadRaca" asp-controller="Raca">Cadastrar</a>
 </p>
 <table class="table">
     <thead>
@@ -18,24 +18,33 @@
             <th>
                 @Html.DisplayNameFor(model => model.racaAni)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.RefTipoAnimal.Tipo)
+            </th>
+
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.racaAni)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.racaAni)
+                </td>
+                <th>
+                    @Html.DisplayFor(modelItem => item.RefTipoAnimal.Tipo)
+                </th>
+                <td>
+                    @Html.ActionLink("Editar", "editarRaca", new { id=item.Id }) |
+                    @Html.ActionLink("Detalhes", "Details", new {id=item.Id}) |
+                    @Html.ActionLink("Excluir", "Delete", new { id=item.Id},
+                new { onclick = "return confirm('Deseja realmente Excluir este item?');" })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
