@@ -1,15 +1,15 @@
-﻿using aspnetcoremvc_adonet.Models;
-using aspnetcoremvc_adonet.Repositories.Contract;
+﻿using ClincaVeterinariaAspCore.Models;
+using ClincaVeterinariaAspCore.Repositories.Contract;
 using Microsoft.AspNetCore.Mvc;
 
-namespace aspnetcoremvc_adonet.Controllers
+namespace ClincaVeterinariaAspCore.Controllers
 {
     public class TipoController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private ITipoAnimalRepository _tipoAnimalRepository;
 
-        public TipoController(ILogger<HomeController> logger, ITipoAnimalRepository tipoAnimalRepository)
+        public c(ILogger<HomeController> logger, ITipoAnimalRepository tipoAnimalRepository)
         {
             _logger = logger;
             _tipoAnimalRepository = tipoAnimalRepository;
@@ -18,12 +18,13 @@ namespace aspnetcoremvc_adonet.Controllers
         {
             return View();
         }
+        // Lista Tipo Animal
         public IActionResult ListaTipoAnimal()
         {
             return View(_tipoAnimalRepository.ObterTodosTipoAnimal());
 
         }
-
+        // cadastro 
         public IActionResult CadTipo()
         {
             return View();
@@ -35,7 +36,7 @@ namespace aspnetcoremvc_adonet.Controllers
             ViewBag.Message = "Cadastro realizado com sucesso.";
             return RedirectToAction(nameof(ListaTipoAnimal));
         }
-
+        //edtar
         public IActionResult editarTipo(int id)
         {
 
@@ -47,6 +48,7 @@ namespace aspnetcoremvc_adonet.Controllers
             _tipoAnimalRepository.Atualizar(tipoAnimal);
             return RedirectToAction(nameof(ListaTipoAnimal));
         }
+        //deletar
         public IActionResult Delete(int id)
         {
             _tipoAnimalRepository.Excluir(id);
