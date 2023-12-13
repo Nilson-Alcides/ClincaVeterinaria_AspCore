@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ITipoAnimalRepository, TipoAnimalRepository>();
+builder.Services.AddScoped<IRacaRepository, RacaRepository>();
 
 var app = builder.Build();
 
