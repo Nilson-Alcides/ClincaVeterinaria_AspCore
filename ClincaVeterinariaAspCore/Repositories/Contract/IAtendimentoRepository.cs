@@ -1,7 +1,7 @@
-﻿using aspnetcoremvc_adonet.Models;
+﻿using ClincaVeterinariaAspCore.Models;
 using System.Data;
 
-namespace aspnetcoremvc_adonet.Repositories.Contract
+namespace ClincaVeterinariaAspCore.Repositories.Contract
 {
     public interface IAtendimentoRepository
     {
