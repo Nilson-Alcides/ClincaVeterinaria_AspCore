@@ -1,0 +1,47 @@
+﻿@model ClincaVeterinariaAspCore.Models.Veterinario
+
+@{
+    ViewData["Title"] = "editarVeterinario";
+}
+
+
+<h4>Veterinario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="editarVeterinario">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                
+                <input asp-for="Id" type="hidden" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeVeter" class="control-label"></label>
+                <input asp-for="NomeVeter" class="form-control" />
+                <span asp-validation-for="NomeVeter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelVeter" class="control-label"></label>
+                <input asp-for="TelVeter" class="form-control" />
+                <span asp-validation-for="TelVeter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailVeter" class="control-label"></label>
+                <input asp-for="EmailVeter" class="form-control" />
+                <span asp-validation-for="EmailVeter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ListaVeterinario">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

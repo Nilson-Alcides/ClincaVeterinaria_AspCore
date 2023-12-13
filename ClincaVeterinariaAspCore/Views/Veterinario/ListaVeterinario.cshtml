@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ClincaVeterinariaAspCore.Models.Veterinario>
+
+@{
+    ViewData["Title"] = "ListaVeterinario";
+}
+
+<h1>ListaVeterinario</h1>
+
+<p>
+    <a asp-action="CadVeterinario" asp-controller="Veterinario">Cadastrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeVeter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelVeter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailVeter)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeVeter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelVeter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailVeter)
+            </td>
+            <td>
+                    @Html.ActionLink("Atualizar", "EditarVeterinario", new { id=item.Id }) |
+                    @Html.ActionLink("Detalhes", "Details", new { id=item.Id }) |
+                    @Html.ActionLink("Excluir", "Delete", new { id=item.Id },
+                new { onclick = "return confirm('Deseja realmente Excluir este item?');" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -68,6 +68,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1xMaXN0YVRpcG9BbmltYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Veterinario/CadVeterinario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaW9cQ2FkVmV0ZXJpbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Veterinario/editarVeterinario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaW9cZWRpdGFyVmV0ZXJpbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/Veterinario/ListaVeterinario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaW9cTGlzdGFWZXRlcmluYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nilson/source/repos/ASPNETCORE/ClincaVeterinariaAspCore/ClincaVeterinaria_AspCore/ClincaVeterinariaAspCore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
