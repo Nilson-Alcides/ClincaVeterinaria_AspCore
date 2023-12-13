@@ -1,4 +1,4 @@
-﻿namespace aspnetcoremvc_adonet.Models
+﻿namespace ClincaVeterinariaAspCore.Models
 {
     public class Login
     {
