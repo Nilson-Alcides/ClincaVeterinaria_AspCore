@@ -1,10 +1,10 @@
-﻿using aspnetcoremvc_adonet.Models;
-using aspnetcoremvc_adonet.Repositories.Contract;
+﻿using ClincaVeterinariaAspCore.Models;
+using ClincaVeterinariaAspCore.Repositories.Contract;
 using Microsoft.CodeAnalysis.Elfie.Diagnostics;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace aspnetcoremvc_adonet.Repositories
+namespace ClincaVeterinariaAspCore.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
