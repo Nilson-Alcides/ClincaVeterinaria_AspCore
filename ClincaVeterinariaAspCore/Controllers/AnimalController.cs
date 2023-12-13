@@ -26,16 +26,16 @@ namespace ClincaVeterinariaAspCore.Controllers
         }
         public IActionResult CadAnimal()
         {
-            ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
-            ViewBag.Senha = HttpContext.Session.GetString("Senha");
-            ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
+            //ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
+            //ViewBag.Senha = HttpContext.Session.GetString("Senha");
+            //ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
 
-            if (ViewBag.UserLogado  == null && ViewBag.Senha == null)
-            {
-                return RedirectToAction("Index", "Home");
+            //if (ViewBag.UserLogado  == null && ViewBag.Senha == null)
+            //{
+            //    return RedirectToAction("Index", "Home");
 
-            }else
-            {
+            //}else
+            //{
                 //Seleciona os clientes ***Lista de Clientes***
                 var listaCli = _clienteRepository.ObterTodosClientes();
                 var ObjCliente = new Animal
@@ -56,8 +56,8 @@ namespace ClincaVeterinariaAspCore.Controllers
 
                 return View();
 
-            }
-            return View();
+            //}
+            //return View();
 
         }
         [HttpPost]
