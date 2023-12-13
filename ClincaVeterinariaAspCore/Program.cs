@@ -10,6 +10,7 @@ builder.Services.AddScoped<ITipoAnimalRepository, TipoAnimalRepository>();
 builder.Services.AddScoped<IRacaRepository, RacaRepository>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IVeterinarioRepository, VeterinarioRepository>();
+builder.Services.AddScoped<IAnimalRepository, AnimalRepository>();
 
 var app = builder.Build();
 
