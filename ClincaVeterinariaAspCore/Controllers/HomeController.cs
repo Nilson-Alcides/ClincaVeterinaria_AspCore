@@ -20,10 +20,7 @@ namespace ClincaVeterinariaAspCore.Controllers
         {
             return View();
         }
-        //public IActionResult LoginPainel()
-        //{
-        //    return View();
-        //}
+
         [HttpPost]
         public IActionResult Index(Login verLogin)
         {
@@ -62,10 +59,19 @@ namespace ClincaVeterinariaAspCore.Controllers
         }
         public IActionResult PainelAdmin()
         {
-            ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
-            ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
-            // return new ContentResult() { Content = "Este é o Painel do Cliente Admin!" + ViewBag.UsuarioLogado };
-            return View();
+           
+            if (HttpContext.Session.Id == null || HttpContext.Session.IsAvailable != true)
+            {
+                return RedirectToAction("Index", "Home");
+            }           
+            else
+            {
+                
+                ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
+                ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
+                return View();
+            }
+            
         }
         public IActionResult PainelComum()
         {
@@ -81,18 +87,14 @@ namespace ClincaVeterinariaAspCore.Controllers
         {
             return View();
         }
-        public ActionResult Logout()
+        public IActionResult Logout()
         {
-            ViewBag.UserIdo = null;
-            ViewBag.UserLogado = null;
-            ViewBag.UserTipo = null;
-            return RedirectToAction("LoginPainel", "Home");
-        }
+            HttpContext.Session.Clear();
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            //ViewBag.UserIdo = null;
+            //ViewBag.UserLogado = null;
+            //ViewBag.UserTipo = null;
+            return RedirectToAction("Index", "Home");
         }
     }
 }

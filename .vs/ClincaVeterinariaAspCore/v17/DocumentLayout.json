@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\views\\cliente\\listacliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\views\\cliente\\listacliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\views\\home\\paineladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\views\\home\\paineladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nilson\\AppData\\Local\\SourceServer\\d75c64877a182fc768c1b6e2ac63f4ab30fbb76667c4b1cff3279760c914dc93\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\repositories\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\repositories\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\repositories\\racarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\repositories\\racarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\repositories\\contract\\ianimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\repositories\\contract\\ianimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|c:\\users\\nilson\\source\\repos\\aspnetcore\\clincaveterinariaaspcore\\clincaveterinaria_aspcore\\clincaveterinariaaspcore\\views\\cliente\\cadcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8ACB8622-8FFB-47AC-9E84-562FCD277EFE}|ClincaVeterinariaAspCore\\ClincaVeterinariaAspCore.csproj|solutionrelative:clincaveterinariaaspcore\\views\\cliente\\cadcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PainelAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Home\\PainelAdmin.cshtml",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Views\\Home\\PainelAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Home\\PainelAdmin.cshtml",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Views\\Home\\PainelAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T02:33:39.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RacaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Repositories\\RacaRepository.cs",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Repositories\\RacaRepository.cs",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Repositories\\RacaRepository.cs",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Repositories\\RacaRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T00:13:26.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAnimalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Repositories\\Contract\\IAnimalRepository.cs",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Repositories\\Contract\\IAnimalRepository.cs",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Repositories\\Contract\\IAnimalRepository.cs",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Repositories\\Contract\\IAnimalRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T00:09:05.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnimalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Repositories\\AnimalRepository.cs",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Repositories\\AnimalRepository.cs",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Repositories\\AnimalRepository.cs",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Repositories\\AnimalRepository.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAIwDQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T00:06:41.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CadCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Cliente\\CadCliente.cshtml",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Views\\Cliente\\CadCliente.cshtml",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Cliente\\CadCliente.cshtml",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Views\\Cliente\\CadCliente.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T00:03:31.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T00:35:31.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListaCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Cliente\\ListaCliente.cshtml",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Views\\Cliente\\ListaCliente.cshtml",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Views\\Cliente\\ListaCliente.cshtml",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Views\\Cliente\\ListaCliente.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T02:34:21.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAYwD4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T00:34:10.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "ClincaVeterinariaAspCore\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Nilson\\source\\repos\\ASPNETCORE\\ClincaVeterinariaAspCore\\ClincaVeterinaria_AspCore\\ClincaVeterinariaAspCore\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "ClincaVeterinariaAspCore\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwCMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T23:51:32.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Nilson\\AppData\\Local\\SourceServer\\d75c64877a182fc768c1b6e2ac63f4ab30fbb76667c4b1cff3279760c914dc93\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\d75c64877a182fc768c1b6e2ac63f4ab30fbb76667c4b1cff3279760c914dc93\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Nilson\\AppData\\Local\\SourceServer\\d75c64877a182fc768c1b6e2ac63f4ab30fbb76667c4b1cff3279760c914dc93\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\d75c64877a182fc768c1b6e2ac63f4ab30fbb76667c4b1cff3279760c914dc93\\ClincaVeterinariaAspCore\\Controllers\\HomeController.cs [Somente Leitura]",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwDwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T02:24:03.505Z",
+              "EditorCaption": " [Somente Leitura]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -260,6 +260,7 @@ C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinar
 C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\scopedcss\bundle\ClincaVeterinariaAspCore.styles.css
 C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\scopedcss\projectbundle\ClincaVeterinariaAspCore.bundle.scp.css
-C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\ClincaVeterinariaAspCore.csproj.CopyComplete
 C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\ClincaVeterinariaAspCore.genruntimeconfig.cache
 C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\ref\ClincaVeterinariaAspCore.dll
+C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\ClincaVeterinariaAspCore.sourcelink.json
+C:\Users\Nilson\source\repos\ASPNETCORE\ClincaVeterinariaAspCore\ClincaVeterinaria_AspCore\ClincaVeterinariaAspCore\obj\Debug\net7.0\ClincaVe.14A12710.Up2Date

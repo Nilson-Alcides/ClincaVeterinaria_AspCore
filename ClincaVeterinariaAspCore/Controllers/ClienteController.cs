@@ -7,12 +7,11 @@ namespace ClincaVeterinariaAspCore.Controllers
 {
     public class ClienteController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+     
         private IClienteRepository _clienteRepository;
 
-        public ClienteController(ILogger<HomeController> logger, IClienteRepository clienteRepository)
-        {
-            _logger = logger;
+        public ClienteController(IClienteRepository clienteRepository)
+        {            
             _clienteRepository = clienteRepository;
         }
        
@@ -20,16 +19,40 @@ namespace ClincaVeterinariaAspCore.Controllers
         {
             return View(_clienteRepository.ObterTodosClientes());
         }
+        
         public IActionResult CadCliente()
         {
-            return View();
+            if (HttpContext.Session.Id == null || HttpContext.Session.IsAvailable != true)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+
+                ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
+                ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
+                return View();
+            }
+            
         }
         [HttpPost]
         public IActionResult CadCliente(Cliente cliente )
         {
-            _clienteRepository.Cadastrar(cliente);
-            ViewBag.Message = "Cadastro realizado com sucesso.";
-            return RedirectToAction(nameof(ListaCliente));
+            if (HttpContext.Session.Id == null || HttpContext.Session.IsAvailable != true)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+
+                ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
+                ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
+
+
+                _clienteRepository.Cadastrar(cliente);
+                ViewBag.Message = "Cadastro realizado com sucesso.";
+                return RedirectToAction(nameof(ListaCliente));
+            }
         }
         public IActionResult editarCliente(int id)
         {
@@ -47,7 +70,6 @@ namespace ClincaVeterinariaAspCore.Controllers
             _clienteRepository.Excluir(id);
             return RedirectToAction(nameof(ListaCliente));
         }
-
 
 
     }

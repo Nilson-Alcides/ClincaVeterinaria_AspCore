@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClincaVeterinariaAspCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e01db3e7d895646da3235e00782f50e2c21e21e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClincaVeterinariaAspCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClincaVeterinariaAspCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

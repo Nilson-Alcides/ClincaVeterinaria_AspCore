@@ -9,10 +9,12 @@ namespace ClincaVeterinariaAspCore.Repositories
     public class ClienteRepository : IClienteRepository
     {
         private readonly string _conexaoMySQL;
+
         public ClienteRepository(IConfiguration conf)
         {
             _conexaoMySQL = conf.GetConnectionString("ConexaoMySQL");
         }
+
         public IEnumerable<Cliente> ObterTodosClientes()
         {
             List<Cliente> cliList = new List<Cliente>();

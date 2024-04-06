@@ -7,7 +7,7 @@ namespace ClincaVeterinariaAspCore.Repositories.Contract
         //CRUD
         IEnumerable<Animal> ObterTodosAnimais();
         void Cadastrar(Animal animal);
-        void Atualizar(Animal animal);
+        void Atualizar(Animal animal);       
         Animal ObterAnimais(int Id);        
         void Excluir(int Id);
     }

@@ -26,38 +26,24 @@ namespace ClincaVeterinariaAspCore.Controllers
         }
         public IActionResult CadAnimal()
         {
-            //ViewBag.UserLogado = HttpContext.Session.GetString("Nome");
-            //ViewBag.Senha = HttpContext.Session.GetString("Senha");
-            //ViewBag.UserTipo = HttpContext.Session.GetString("Tipo");
+            var listaCli = _clienteRepository.ObterTodosClientes();
+            var ObjCliente = new Animal
+            {
+                ListaCliente = (List<Cliente>)listaCli
 
-            //if (ViewBag.UserLogado  == null && ViewBag.Senha == null)
-            //{
-            //    return RedirectToAction("Index", "Home");
+            };
+            ViewBag.ListaClientes = new SelectList(listaCli, "id", "nomeCli");
 
-            //}else
-            //{
-                //Seleciona os clientes ***Lista de Clientes***
-                var listaCli = _clienteRepository.ObterTodosClientes();
-                var ObjCliente = new Animal
-                {
-                    ListaCliente = (List<Cliente>)listaCli
+            //Seleciona as raças ***Lista de Raças***
+            var listaRaca = _racaRepository.ObterTodosRaca();
+            var ObjRaca = new Animal
+            {
+                ListaRaca = (List<Raca>)listaRaca
 
-                };
-                ViewBag.ListaClientes = new SelectList(listaCli, "id", "nomeCli");
+            };
+            ViewBag.ListaRacas = new SelectList(listaRaca, "Id", "racaAni");
 
-                //Seleciona as raças ***Lista de Raças***
-                var listaRaca = _racaRepository.ObterTodosRaca();
-                var ObjRaca = new Animal
-                {
-                    ListaRaca = (List<Raca>)listaRaca
-
-                };
-                ViewBag.ListaRacas = new SelectList(listaRaca, "Id", "racaAni");
-
-                return View();
-
-            //}
-            //return View();
+            return View();
 
         }
         [HttpPost]
@@ -103,7 +89,7 @@ namespace ClincaVeterinariaAspCore.Controllers
             //***Lista de Clientes***
             var listaCli = _clienteRepository.ObterTodosClientes();
             ViewBag.ListaClientes = new SelectList(listaCli, "id", "nomeCli");
-            
+
             //***Lista de Raças***
             var listaRaca = _racaRepository.ObterTodosRaca();
             ViewBag.ListaRacas = new SelectList(listaRaca, "Id", "racaAni");

@@ -14,6 +14,7 @@ namespace ClincaVeterinariaAspCore.Repositories
             _conexaoMySQL = conf.GetConnectionString("ConexaoMySQL");
         }
 
+
         public IEnumerable<Animal> ObterTodosAnimais()
         {
             List<Animal> Paclist = new List<Animal>();
@@ -39,20 +40,24 @@ namespace ClincaVeterinariaAspCore.Repositories
                         {
                             Id = Convert.ToInt32(dr["codAni"]),
                             nomeAni = (string)(dr["nomeAni"]),
-                            RefCliente = new Cliente() { 
+                            RefCliente = new Cliente()
+                            {
                                 id = Convert.ToInt32(dr["codCli"]),
                                 nomeCli = (string)(dr["nomeCli"])
                             },
-                            RefRaca = new Raca() { 
+                            RefRaca = new Raca()
+                            {
                                 Id = Convert.ToInt32(dr["codRaca"]),
-                                racaAni =  (string)(dr["racaAni"]),
-                            },
+                                racaAni = (string)(dr["racaAni"])
+                            }
                         }
                         );
                 }
                 return Paclist;
             }
+
         }
+      
         public void Cadastrar(Animal animal)
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
@@ -99,8 +104,7 @@ namespace ClincaVeterinariaAspCore.Repositories
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
-                conexao.Open();
-                //MySqlCommand cmd = new MySqlCommand("select * from tbAnimal where codAni=@codAni", conexao);
+                conexao.Open();               
                 MySqlCommand cmd = new MySqlCommand("SELECT * from tbanimal as t1 " +
                 " INNER JOIN tbcliente as t2 ON t1.codCli = t2.codCli " +
                 " INNER JOIN tbraca as t3 ON t3.codRaca = t1.codRaca where codAni=@codAni", conexao);
@@ -129,5 +133,6 @@ namespace ClincaVeterinariaAspCore.Repositories
                 return animal;
             }
         }
+        
     }
 }
